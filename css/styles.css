@@ -1,0 +1,73 @@
+/* regla de font-face para agregar fuentes personalizadas */
+@font-face {
+    font-family: Charter;
+    src: url('../fonts/charter-regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Charter;
+    src: url('../fonts/charter-italic.otf');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Charter;
+    src: url('../fonts/charter-bold.otf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Charter;
+    src: url('../fonts/charter-bold-italic.otf');
+    font-style: italic;
+    font-weight: 700;
+}
+
+:root {
+    font-size: 16px;
+    --ligth-gray: #616161;
+    --gray: #212121;
+    --dark-gray: #212429;
+    --black: #000000;
+}
+
+body {
+    color: var(--gray);
+    font-family: Charter;
+}
+
+header {
+    font-size: 14px;
+    color: var(--ligth-gray);
+}
+
+header a {
+    color: var(--ligth-gray);
+    text-decoration: none;
+}
+
+header a:hover {
+    /* --gray: red;  reasignación de valores de variables*/ 
+    color: var(--gray);
+}
+
+nav details summary {
+    font-weight: bold;
+}
+
+h1 {
+    /* font-size: 60px; */
+    font-size: 3.75em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
