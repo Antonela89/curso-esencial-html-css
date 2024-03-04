@@ -114,7 +114,7 @@ p {
 
 .section-content {
     counter-reset: titleList;
-    margin-block-start: 164px;
+    margin-block-start: 64px;
     /* margin-top: 164px; */
 }
 
