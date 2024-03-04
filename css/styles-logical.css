@@ -215,4 +215,36 @@ pre {
     padding-inline: 16px;
 }
 
+.slider {
+}
+
+.slider .slider-container { /* por defecto es un elemento en linea(display: inline) y por eso no tiene alto y ancho */ 
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.slider .slider-slide .video {
+    margin: 0;
+    display: inline-block;
+    inline-size: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider .slider-bullet-list {
+    text-align: center;
+    margin-block-start: 16px;
+}
+
+.slider .slider-bullet {
+    display: inline-block;
+    inline-size: 16px;
+    block-size: 16px;
+    background: rgba(66, 66, 66, 0.2);
+    border-radius: 50px;
+}
+
 
