@@ -23,32 +23,34 @@ body {
 }
 
 .hero {
-    height: 350px;
+    block-size: 50px;
     background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
 
 }
 
 .header {
-    position: sticky;
-    inset-block-start: -44px; 
+    /* position: sticky; */
+    /* inset-block-start: -44px;  */
 }
 
 .header-content {
-    position: relative;
-    inset-block-start: 64px;
+    /* position: relative;
+    inset-block-start: 64px; */
+    padding-inline: 20px;
 }
 
 header {
     max-inline-size: 188px;
     font-size: 14px;
     color: var(--white);
-    position: absolute;
-    z-index: 1;
-    inset-inline-start: -232px; /* left */
+    margin-block-start: 20px;
+    /* position: absolute; */
+    /* z-index: 1; */
+    /* inset-inline-start: -232px; left */
     /* inset-inline-end: rigth; */
     /* left: -232px; */
     /* inset-block-end: bottom; */
-    inset-block-start: 0;
+    /* inset-block-start: 0; */
     /* top: 64px; */
 }
 
@@ -72,10 +74,10 @@ nav details summary {
 }
 
 h1 {
-    font-size: 3.75em;
+    font-size: 2.5em;
     /* margin-block-start: 64px;
     margin-block-end: 16px; */
-    margin-block: 64px 16px;
+    margin-block: 20px 16px;
     font-weight: normal;
 }
 
@@ -245,6 +247,63 @@ pre {
     block-size: 16px;
     background: rgba(66, 66, 66, 0.2);
     border-radius: 50px;
+}
+
+.form {
+
+}
+
+.form input {
+    border: 1px solid var(--white);
+    background: var(--gray-dark);
+    display: block;
+    box-sizing: border-box;
+    inline-size: 100%;
+    color: var(--white);
+    border-radius: 8px;
+    padding-block: 12px;
+    padding-inline: 16px;
+    margin-block-end: 24px;
+    font-size: 16px;
+}
+
+.form input::-webkit-input-placeholder {
+    color: var(--white);
+}
+
+.form input[type="submit"] {
+    background:rgba(21, 126, 251, 1);
+    border: none;
+}
+
+@media screen and (min-width: 1366px) {
+    .hero {
+        block-size: 350px;
+    }
+
+    h1 {
+        font-size: 3.75em;
+        margin-block-start: 64px;
+    }
+
+    .header {
+        position: sticky;
+        inset-block-start: -44px; 
+    }
+    
+    .header-content {
+        position: relative;
+        inset-block-start: 64px;
+        padding-inline: 0;
+    }
+    
+    header {
+        max-inline-size: 188px;
+        position: absolute;
+        z-index: 1;
+        inset-inline-start: -232px; 
+        inset-block-start: 0;
+    }
 }
 
 
