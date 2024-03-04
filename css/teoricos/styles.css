@@ -1,28 +1,28 @@
 /* regla de font-face para agregar fuentes personalizadas */
 @font-face {
     font-family: Charter;
-    src: url('../fonts/charter-regular.otf');
+    src: url('../assets/fonts/charter-regular.otf');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: Charter;
-    src: url('../fonts/charter-italic.otf');
+    src: url('../assets/fonts/charter-italic.otf');
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
     font-family: Charter;
-    src: url('../fonts/charter-bold.otf');
+    src: url('../assets/fonts/charter-bold.otf');
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: Charter;
-    src: url('../fonts/charter-bold-italic.otf');
+    src: url('../assets/fonts/charter-bold-italic.otf');
     font-style: italic;
     font-weight: 700;
 }

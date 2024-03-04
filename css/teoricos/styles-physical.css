@@ -1,28 +1,28 @@
 /* regla de font-face para agregar fuentes personalizadas */
 @font-face {
     font-family: Charter;
-    src: url('../fonts/charter-regular.otf');
+    src: url('../assets/fonts/charter-regular.otf');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: Charter;
-    src: url('../fonts/charter-italic.otf');
+    src: url('../assets/fonts/charter-italic.otf');
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
     font-family: Charter;
-    src: url('../fonts/charter-bold.otf');
+    src: url('../assets/fonts/charter-bold.otf');
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: Charter;
-    src: url('../fonts/charter-bold-italic.otf');
+    src: url('../assets/fonts/charter-bold-italic.otf');
     font-style: italic;
     font-weight: 700;
 }
@@ -49,32 +49,34 @@ body {
 }
 
 .hero {
-    height: 350px;
+    height: 50px;
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('../assets/img/fondos/pattern.png');
 }
 
 .header {
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* inset-block-start: -44px;  */
 }
 
 .header-content {
-    position: relative;
+    /* position: relative;
+    inset-block-start: 64px; */
+    padding-inline: 20px;
 }
 
 header {
-    width: 188px;
+    max-inline-size: 188px;
     font-size: 14px;
     color: var(--ligth-gray);
-    /* position: static; por defecto */
-    /* position: relative; activa: top, left, right, bottom, z-index. No modifica el espacio natural o fisico del elemento */
-    /* position: absolute; el elemento se ubica según el espacion que debe ocupar en el dom. Activa top, left, right, bottom, si s coloca top y bottom, ambos con valor 0, el elmento va a ocupar un  heigth del 100vh, lo mismo para left y right pero con el vw; */
-    /* position: fixed; queda fijo en la pantalla */
-    /* position: sticky; necesita ser relativo a algo: top para que el elemento se mueva*/
-    position: absolute;
-    z-index: 1;
-    left: -232px;
-    top: 64px;
+    margin-block-start: 20px;
+    /* position: absolute; */
+    /* z-index: 1; */
+    /* inset-inline-start: -232px; left */
+    /* inset-inline-end: rigth; */
+    /* left: -232px; */
+    /* inset-block-end: bottom; */
+    /* inset-block-start: 0; */
+    /* top: 64px; */
 }
 
 header a {
@@ -85,6 +87,27 @@ header a {
 header a:hover {
     /* --gray: red;  reasignación de valores de variables*/ 
     color: var(--gray);
+}
+
+header .variantes {
+    /* margin-bottom: 104px; */
+    padding-left: 40px;
+}
+
+.header .variantes ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.header .variantes a {
+    padding: 8px;
+    display: block;
+}
+
+.header .variantes li:hover>a {
+    border-radius: 8px;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 nav details summary {
@@ -147,7 +170,7 @@ h3 {
 
 .section-content {
     counter-reset: titleList;
-    margin-top: 164px;
+    margin-top: 64px;
 }
 
 .section-content:first-of-type {
@@ -229,6 +252,101 @@ pre {
 
 .main-content {
     
+}
+
+.slider {
+}
+
+.slider .slider-container { /* por defecto es un elemento en linea(display: inline) y por eso no tiene alto y ancho */ 
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.slider .slider-slide .video {
+    margin: 0;
+    display: inline-block;
+    inline-size: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider .slider-bullet-list {
+    text-align: center;
+    margin-block-start: 16px;
+}
+
+.slider .slider-bullet {
+    display: inline-block;
+    inline-size: 16px;
+    block-size: 16px;
+    background: rgba(66, 66, 66, 0.2);
+    border-radius: 50px;
+}
+
+.form {
+
+}
+
+.form input {
+    border: 1px solid var(--white);
+    background: var(--gray-dark);
+    display: block;
+    box-sizing: border-box;
+    inline-size: 100%;
+    color: var(--white);
+    border-radius: 8px;
+    padding-block: 12px;
+    padding-inline: 16px;
+    margin-block-end: 24px;
+    font-size: 16px;
+}
+
+.form input::-webkit-input-placeholder {
+    color: var(--white);
+}
+
+.form input[type="submit"] {
+    background:rgba(21, 126, 251, 1);
+    border: none;
+}
+
+@media screen and (min-width: 1366px) {
+    .hero {
+        block-size: 350px;
+    }
+
+    h1 {
+        font-size: 3.75em;
+        margin-block-start: 64px;
+    }
+
+    .header {
+        position: sticky;
+        inset-block-start: -44px; 
+    }
+    
+    .header-content {
+        position: relative;
+        inset-block-start: 64px;
+        padding-inline: 0;
+    }
+    
+    header {
+        max-inline-size: 188px;
+        position: absolute;
+        z-index: 1;
+        inset-inline-start: -232px; 
+        inset-block-start: 0;
+    }
+
+    header .variantes {
+    margin-bottom: 104px;
+    padding-left: 0;
+    }
+
 }
 
 

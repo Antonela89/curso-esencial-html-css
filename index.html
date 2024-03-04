@@ -7,8 +7,8 @@
     
     <!-- link css -->
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
-    <link rel="stylesheet" href="./css/styles-physical.css">
-    
+    <!-- <link rel="stylesheet" href="./css/styles-physical.css"> -->
+    <link rel="stylesheet" href="/css/variantes/styles_nemiun_A.css">
 
     <!-- link font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,51 +23,63 @@
             <div class="header-content">
                 <header>
                     <nav>
-                        <details open>
-                            <summary>
-                                Setup
-                            </summary>
-                            <ol>
-                                <li>
-                                    <a href="#google_chrome">Google Chrome</a>
-                                </li>
-                                <li>
-                                    <a href="#vsc">Visual Studio Code</a>
-                                </li>
-                                <li>
-                                    <a href="#figma">Figma</a>
-                                </li>
-                                <li>
-                                    <a href="#github">GitHub</a>
-                                </li>
-                            </ol>
-                        </details>
-                        <details open>
-                            <summary>
-                                Conceptos esenciales del Desarrollo Web
-                            </summary>
-                            <ol>
-                                <li>
-                                    <a href="#html">Qué es HTML</a>
-                                </li>
-                                <li>
-                                    <a href="#etiquetas">Etiquetas</a>
-                                </li>
-                                <li>
-                                    <a href="#dom">DOM</a>
-                                </li>
-                                <li>
-                                    <a href="#semantica">Semántica</a>
-                                </li>
-                                <li>
-                                    <a href="#atributos">Atributos</a>
-                                </li>
-                                <li>
-                                    <a href="#css">Qué es CSS</a>
-                                </li>
-                            </ol>
-                        </details>
-                    
+                        <div class="variantes">
+                            <h4>VARIANTES DEL PROYECTO</h4>
+                            <ul>
+                                <li><a href="./index.html">Nemium A</a></li>
+                                <li><a href="./nemiun_B.html">Nemium B</a></li>
+                                <li><a href="">Nemium C</a></li>
+                                <li><a href="./nemiun_D.html">Nemium D</a></li>
+                                <li><a href="">Nemium F</a></li>
+                            </ul>
+                        </div>
+                        <div class="contenido">
+                            <h4>CONTENIDO</h4>
+                            <details open>
+                                <summary>
+                                    Setup
+                                </summary>
+                                <ol>
+                                    <li>
+                                        <a href="#google_chrome">Google Chrome</a>
+                                    </li>
+                                    <li>
+                                        <a href="#vsc">Visual Studio Code</a>
+                                    </li>
+                                    <li>
+                                        <a href="#figma">Figma</a>
+                                    </li>
+                                    <li>
+                                        <a href="#github">GitHub</a>
+                                    </li>
+                                </ol>
+                            </details>
+                            <details open>
+                                <summary>
+                                    Conceptos esenciales del Desarrollo Web
+                                </summary>
+                                <ol>
+                                    <li>
+                                        <a href="#html">Qué es HTML</a>
+                                    </li>
+                                    <li>
+                                        <a href="#etiquetas">Etiquetas</a>
+                                    </li>
+                                    <li>
+                                        <a href="#dom">DOM</a>
+                                    </li>
+                                    <li>
+                                        <a href="#semantica">Semántica</a>
+                                    </li>
+                                    <li>
+                                        <a href="#atributos">Atributos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#css">Qué es CSS</a>
+                                    </li>
+                                </ol>
+                            </details>
+                        </div>
                     </nav>
                 </header>
 
@@ -153,7 +165,7 @@
                         <img src="./assets/img/contenidos/css/css.png" alt="Código Cascading Style Sheets">
                 </section>
         
-                <section class="section-content">
+                <section class="section-model-content">
                     <h2>Modelo de caja</h2>
                         <h3>El modelo de caja está compuesto por:</h3>
                         <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
@@ -178,12 +190,45 @@
                             <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
                         </ul>
                 </section>
+
+                <section class="section-slider-content">
+                    <h3>Modelo de caja</h3>
+                    <div class="slider">
+                        <scroll-container class="slider-container">
+                            <scroll-page class="slider-slide" id="video-1">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk?si=Mhm9fXw2C8gjynTd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="video-2">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk?si=Mhm9fXw2C8gjynTd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="video-3">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk?si=Mhm9fXw2C8gjynTd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </scroll-page>
+                        </scroll-container>
+                        <div class="slider-bullet-list">
+                            <a href="#video-1" class="slider-bullet"></a>
+                            <a href="#video-2" class="slider-bullet"></a>
+                            <a href="#video-3" class="slider-bullet"></a>
+                        </div>
+                    </div>
+                    <p>Si tienes alguna pregunta escríbeme a 
+                        <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
+                    </p>
+                </section>
+                <section class="section-form-content">
+                    <form action="#" class="form">
+                        <h3>Suscríbete a nuestro newsletter</h3>
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <input type="submit" value="Suscribirme"/>
+                    </form>
+                </section>
             </div>
         </div>
-
     </main>
+    <footer>
 
-
+    </footer>
 
 </body>
 </html>
