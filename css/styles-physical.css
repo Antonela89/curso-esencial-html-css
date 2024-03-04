@@ -1,0 +1,234 @@
+/* regla de font-face para agregar fuentes personalizadas */
+@font-face {
+    font-family: Charter;
+    src: url('../fonts/charter-regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Charter;
+    src: url('../fonts/charter-italic.otf');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Charter;
+    src: url('../fonts/charter-bold.otf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Charter;
+    src: url('../fonts/charter-bold-italic.otf');
+    font-style: italic;
+    font-weight: 700;
+}
+/* ----------------------------------------------------------- */
+
+:root {
+    font-size: 16px;
+    --ligth-gray: #616161;
+    --gray: #212121;
+    --dark-gray: #212429;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--gray);
+    /* font-family: Charter; */
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+.hero {
+    height: 350px;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('../assets/img/fondos/pattern.png');
+}
+
+.header {
+    position: sticky;
+    top: 0;
+}
+
+.header-content {
+    position: relative;
+}
+
+header {
+    width: 188px;
+    font-size: 14px;
+    color: var(--ligth-gray);
+    /* position: static; por defecto */
+    /* position: relative; activa: top, left, right, bottom, z-index. No modifica el espacio natural o fisico del elemento */
+    /* position: absolute; el elemento se ubica según el espacion que debe ocupar en el dom. Activa top, left, right, bottom, si s coloca top y bottom, ambos con valor 0, el elmento va a ocupar un  heigth del 100vh, lo mismo para left y right pero con el vw; */
+    /* position: fixed; queda fijo en la pantalla */
+    /* position: sticky; necesita ser relativo a algo: top para que el elemento se mueva*/
+    position: absolute;
+    z-index: 1;
+    left: -232px;
+    top: 64px;
+}
+
+header a {
+    color: var(--ligth-gray);
+    text-decoration: none;
+}
+
+header a:hover {
+    /* --gray: red;  reasignación de valores de variables*/ 
+    color: var(--gray);
+}
+
+nav details summary {
+    font-weight: bold;
+    line-height: 24px;
+}
+
+header li {
+    margin-bottom: 16px;
+}
+
+h1 {
+    /* font-size: 60px; */
+    font-size: 3.75em;
+    font-weight: normal;
+
+    /* margenes físicos: en base al navegador */
+    /* margin-top: 64px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    margin-left: 10px; */
+    /* margin: top right bottom left; */
+    /* margin: 64px 10px 16px 10px; modo físico*/
+    margin: 64px 0 16px;
+}
+
+/* h1 + p  { /* selector adyacente  - hermano directo
+    margin-bottom: 64px;
+} */
+
+
+/* h1 ~ p  { /* selector adyacente  - todos los hermanos
+    margin-bottom: 64px;
+} */
+
+hr {
+    margin: 40px 0;
+    color: #61616133
+}
+
+
+h2 {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 64px 0 40px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 16px 0 24px;
+    position: sticky;
+    top: 0;
+    background: var(--white);
+}
+
+.section-content + hr {
+    display: none;
+}
+
+.section-content {
+    counter-reset: titleList;
+    margin-top: 164px;
+}
+
+.section-content:first-of-type {
+    margin-top: 0;
+}
+
+.section-content img {
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+.section-content h3 {
+    counter-increment: titleList;
+    padding-bottom: 8px;
+}
+
+.section-content h3::before {
+    content: counter(titleList, decimal) '. ';
+}
+
+.section-content h3::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: var(--dark-gray);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.section-content ol li {
+    line-height: 24px;
+}
+
+.section-content ul li {
+    margin-bottom: 16px;
+}
+
+.section-content blockquote {
+    margin: 32px 0;
+    padding-left: 16px;
+    font-size: 24px;
+    border-left: 4px solid var(--gray);
+    line-height: 32px;
+}
+
+.section-content blockquote span {
+    color: var(--ligth-gray);
+} 
+
+.section-content blockquote span::before {
+    content: '-';
+}
+
+pre {
+    background: #FEC62E;
+    padding: 40px;
+    font-family: "Roboto", sans-serif;
+    line-height: 24px;
+}
+
+/*.debug { para depurar selectores o ver elementos
+    /* background: red; */
+    /* border: 1px solid red; afecta el modelo de caja */
+    /* outline: 1px solid red; no afecta el modelo de caja, por fuera y por delante*/
+    /* box-shadow: 0 0 0 1px red; no afecta el modelo de caja / por fuera y por detras */
+    /* box-shadow: inset 0 0 0 1px red; no afecta el modelo de caja / por dentro y por detras */
+/*}*/
+
+.main {
+    
+}
+
+.wrapper {
+    max-width: 902px; /* como maximo toma ese valor */
+    margin: auto;
+}
+
+.main-content {
+    
+}
+
+
