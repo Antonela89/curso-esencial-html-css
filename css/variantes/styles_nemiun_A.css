@@ -262,6 +262,40 @@ pre {
     margin-inline-end: 0;
 }
 
+footer {
+    background: var(--dark-gray);
+}
+
+
+.footer-content {
+    width: 366px;
+    padding-block: 48px;
+    margin: auto;
+    color: var(--white);
+}
+
+.footer-content p {
+    text-align: center;
+}
+
+.footer-content .redes {
+    width: 104px;
+    height: 24px;
+    margin: auto;
+    font-size: 0;
+}
+
+.footer-content .redes a {
+    width: 24px;
+    height: 24px;
+    
+}
+
+.footer-content .redes a:nth-child(2) {
+    padding-inline: 16px;
+}
+
+
 @media screen and (min-width: 1366px) {
     .hero {
         block-size: 350px;
@@ -297,6 +331,10 @@ pre {
     
     .section-content img {
     margin-top: 40px;
+    }
+
+    .redes a:nth-child(2) {
+        margin-inline:16px;
     }
 }
 
