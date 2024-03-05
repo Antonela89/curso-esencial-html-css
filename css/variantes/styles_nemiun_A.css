@@ -18,19 +18,19 @@ body {
 }
 
 .hero {
-    height: 50px;
+    block-size: 3,125rem; 
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('/assets/img/fondos/pattern.png');
 }
 
 .header-content {
-    padding-inline: 20px;
+    padding-inline: 1.25rem;
 }
 
 header {
-    max-inline-size: 188px;
-    font-size: 14px;
+    max-inline-size: 11,75rem;
+    font-size: 0,875rem;
     color: var(--ligth-gray);
-    margin-block-start: 20px;
+    margin-block-start: 1.25rem;
 }
 
 header a {
@@ -42,19 +42,18 @@ header a:hover {
     color: var(--gray);
 }
 
-
 .header .variantes ul {
     list-style: none;
-    padding-left: 0;
+    padding-inline-start: 0;
 }
 
 .header .variantes a {
-    padding: 8px;
+    padding: 0.5rem;
     display: block;
 }
 
 .header .variantes li:hover>a {
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background-color: var(--black);
     color: var(--white);
 }
@@ -65,31 +64,30 @@ nav details summary {
 }
 
 header li {
-    margin-bottom: 1rem;
+    margin-block-end: 1rem;
 }
 
 h1 {
     font-size: 3.75em;
     font-weight: normal;
-    margin: 64px 0 16px;
+    margin-block: 4rem 1rem;
 }
 
 hr {
-    margin: 40px 0;
+    margin-block: 2.5rem;
     color: #61616133
 }
-
 
 h2 {
     font-size: 2em;
     font-weight: normal;
-    margin: 64px 0 40px;
+    margin-block: 2.5rem 1.5rem;
 }
 
 h3 {
     font-size: 1.5em;
     font-weight: normal;
-    /* margin: 16px 0 24px; */
+    /* margin: 16px 0 1.5rem; */
     /* position: sticky;
     top: 0;
     background: var(--white); */
@@ -101,36 +99,36 @@ h3 {
 
 .section-content {
     counter-reset: titleList;
-    margin-top: 64px;
+    margin-block-start: 2.5rem;
 }
 
 .section-content:first-of-type {
-    margin-top: 0;
+    margin-block-start: 0;
 }
 
 .section-content img {
     display: block;
-    margin-top: 24px;
-    max-width: 100%;
+    margin-top: 1.5rem;
+    max-inline-size: 100%;
 }
 
 .section-content div {
     background: var(--white);
     position: sticky;
     top: 0;
-    margin-block-start: 16px;
+    margin-block-start: 1rem;
 }
 
 .section-content div div {
     display: inline-block;
-    /* margin: 16px 0 24px; */
-    /* margin-block-start: 16px; */
+    /* margin: 16px 0 1.5rem; */
+    /* margin-block-start: 1rem; */
 }
 
 
 .section-content div div h3 {
     counter-increment: titleList;
-    padding-bottom: 8px;
+    padding-block-end: 0.5rem;
     display: inline-block;
     margin:0;
     /* margin-block-start: 2.5rem; */
@@ -142,8 +140,8 @@ h3 {
 
 .section-content div div h3::after {
     content: '';
-    width: 100%;
-    height: 4px;
+    inline-size: 100%;
+    block-size: 0.25rem;
     background: var(--dark-gray);
     display: inline-block;
     position: absolute;
@@ -152,19 +150,19 @@ h3 {
 }
 
 .section-content ol li, .section-model-content ol li {
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .section-content ul li, .section-model-content ul li {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .section-content blockquote {
-    margin: 32px 0;
-    padding-left: 16px;
-    font-size: 24px;
-    border-left: 4px solid var(--gray);
-    line-height: 32px;
+    margin: 2rem 0;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    border-left: 0.25rem solid var(--gray);
+    line-height: 2rem;
 }
 
 .section-content blockquote span {
@@ -177,9 +175,9 @@ h3 {
 
 pre {
     background: #FEC62E;
-    padding: 40px;
+    padding: 2.5rem;
     font-family: "Roboto", sans-serif;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 /*.debug { para depurar selectores o ver elementos
@@ -195,12 +193,16 @@ pre {
 }
 
 .wrapper {
-    max-width: 902px; 
+    max-width: 56.375rem; 
     margin: auto;
 }
 
 .main-content {
     margin-inline: 1rem;
+}
+
+.section-slider-content p {
+    margin-block-start: 2.5rem;
 }
 
 .slider {
@@ -218,21 +220,39 @@ pre {
     margin: 0;
     display: inline-block;
     inline-size: 100%;
-    height: auto;
+    block-size: auto;
     aspect-ratio: 16/9;
 }
 
 .slider .slider-bullet-list {
     text-align: center;
-    margin-block-start: 16px;
+    margin-block-start: 1rem;
+    font-size: 0;
 }
 
 .slider .slider-bullet {
     display: inline-block;
-    inline-size: 16px;
-    block-size: 16px;
+    inline-size: 1rem;
+    block-size: 1rem;
     background: rgba(66, 66, 66, 0.2);
-    border-radius: 50px;
+    border-radius: 3.125rem;
+    margin-inline-end: 0.5rem;
+}
+
+.slider .slider-bullet:last-of-type {
+    margin-inline-end: 0;
+}
+
+.slider .slider-bullet:hover {
+    background: #424242;
+}
+
+/* .slider .slider-bullet:active {
+    background: #424242;
+} */
+
+.section-form-content {
+    margin-block: 2.5rem;
 }
 
 .form {
@@ -244,11 +264,11 @@ pre {
     box-sizing: border-box;
     inline-size: 30%;
     border-radius: 90px;
-    padding-block: 12px;
-    padding-inline: 16px;
-    margin-block-end: 24px;
-    margin-inline-end: 16px;
-    font-size: 16px;
+    padding-block: 0.75rem;
+    padding-inline: 1rem;
+    margin-block-end: 1.5rem;
+    margin-inline-end: 1rem;
+    font-size: 1rem;
 }
 
 .form input::-webkit-input-placeholder {
@@ -268,8 +288,8 @@ footer {
 
 
 .footer-content {
-    width: 366px;
-    padding-block: 48px;
+    inline-size: 22.875rem;
+    padding-block: 3rem;
     margin: auto;
     color: var(--white);
 }
@@ -279,62 +299,83 @@ footer {
 }
 
 .footer-content .redes {
-    width: 104px;
-    height: 24px;
+    inline-size: 6.5rem;
+    block-size: 1.5rem;
     margin: auto;
     font-size: 0;
 }
 
 .footer-content .redes a {
-    width: 24px;
-    height: 24px;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
     
 }
 
 .footer-content .redes a:nth-child(2) {
-    padding-inline: 16px;
+    padding-inline: 1rem;
 }
 
 
 @media screen and (min-width: 1366px) {
     .hero {
-        block-size: 350px;
+        block-size: 21.875rem;
+    }
+
+    hr {
+        margin-block: 4rem;
     }
 
     h1 {
         font-size: 3.75em;
-        margin-block-start: 64px;
+        margin-block-start: 4rem;
+    }
+    
+    h2 {
+        margin-block: 4rem 2.5rem;
     }
 
     .header {
         position: sticky;
-        inset-block-start: -44px; 
+        inset-block-start: -3rem; 
     }
     
     .header-content {
         position: relative;
-        inset-block-start: 64px;
+        inset-block-start: 4rem;
         padding-inline: 0;
     }
     
     header {
-        max-inline-size: 188px;
+        max-inline-size: 11.75rem;
         position: absolute;
         z-index: 1;
-        inset-inline-start: -232px; 
+        inset-inline-start: -14.5rem; 
         inset-block-start: 0;
     }
 
     header .variantes {
-    margin-bottom: 104px;
+        margin-block-end: 6.5rem;
+    }
+
+    .section-content {
+        counter-reset: titleList;
+        margin-block-start: 4rem;
     }
     
     .section-content img {
-    margin-top: 40px;
+        margin-block-start: 2.5rem;
+    }
+
+    .section-slider-content p {
+        margin-block-start: 4rem;
+    }
+
+    .section-form-content {
+        margin-block-end: 7.0625rem;
     }
 
     .redes a:nth-child(2) {
-        margin-inline:16px;
+        margin-inline:1rem;
     }
 }
 
