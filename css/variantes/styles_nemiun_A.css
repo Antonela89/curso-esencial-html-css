@@ -1,5 +1,6 @@
 :root {
     font-size: 16px;
+    --font-family-roboto: "Roboto", sans-serif;
     --ligth-gray: #616161;
     --gray: #212121;
     --dark-gray: #212429;
@@ -13,24 +14,28 @@ html{
 
 body {
     color: var(--gray);
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-family-roboto);
     margin: 0;
 }
 
 .hero {
-    block-size: 3,125rem; 
+    block-size: 3.125rem; 
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('/assets/img/fondos/pattern.png');
+}
+
+header {
+    max-inline-size: 11.75rem;
+    font-size: 0.875rem;
+    color: var(--ligth-gray);
+    margin-block-start: 1.25rem;
 }
 
 .header-content {
     padding-inline: 1.25rem;
 }
 
-header {
-    max-inline-size: 11,75rem;
-    font-size: 0,875rem;
-    color: var(--ligth-gray);
-    margin-block-start: 1.25rem;
+header li {
+    margin-block-end: 1rem;
 }
 
 header a {
@@ -63,14 +68,12 @@ nav details summary {
     line-height: 1.5rem;
 }
 
-header li {
-    margin-block-end: 1rem;
-}
-
 h1 {
-    font-size: 3.75em;
+    /* font-size: 3.75em; */
     font-weight: normal;
-    margin-block: 4rem 1rem;
+    font-size: 2.5em;
+    margin-block: 1.25rem 1rem;
+    /* margin-block: 4rem 1rem; */
 }
 
 hr {
@@ -176,7 +179,7 @@ h3 {
 pre {
     background: #FEC62E;
     padding: 2.5rem;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-family-roboto);
     line-height: 1.5rem;
 }
 
